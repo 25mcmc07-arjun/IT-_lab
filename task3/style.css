@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #809fbd;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #f19067;
+  color: rgb(28, 3, 3);
+  text-align: center;
+  padding: 12px;
+  z-index: 1000;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #1c1f26;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+main {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  height: calc(100vh - 140px);
+  overflow-y: auto;
+  padding: 25px;
+}
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  position: relative;       
+  width: 260px;
+  background: white;
+  border: 2px solid #ddd;      
+  padding: 15px;              
+  margin: 10px;               
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.image-box {
+  position: relative;         
+  overflow: hidden;
+}
+.image-box img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+.overlay {
+  position: absolute;         
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 18px;
+}
+.image-box:hover .overlay {
+  opacity: 1;
+}
+.card h3 {
+  margin-top: 10px;
+}
+
+.card p {
+  color:#555;
+}
+.tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: crimson;
+  color: white;
+  padding: 5px 8px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.sticky {
+  position: sticky;
+  top: 5px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="todo-container">
+    <h2>Create your Task List</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter your task">
+    <input type="date" id="dueDate">
+    <button onclick="addTask()">Add Task</button>
+
+    <div class="filters">
+      <button onclick="filterTasks('all')">All Task</button>
+      <button onclick="filterTasks('completed')">Completed Task</button>
+      <button onclick="filterTasks('pending')">Pending Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

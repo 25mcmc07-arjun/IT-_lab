@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(157, 207, 232);
+    color : rgba(0, 0, 0, 0.678);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    text-align: center;
+}
+header hi{
+    margin-top: 50px;
+}
+header h2{
+    font-weight: normal;
+    font-size: 16px;
+    color: rgb(168, 67, 77);
+}
+nav{
+    text-align: center;
+    padding: 5px;
+}
+nav a{
+    text-decoration: none;
+    margin : 0 10px;
+    font-weight: 1000;
+}
+nav a:hover{
+    text-decoration: underline ;
+} 
+main{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+article{
+
+    padding: 10px;
+}
+article div{
+    margin-bottom: 20px;
+}
+article img{
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+footer{
+    text-align: center;
+    padding: 0 20px;
+}
+
+.comments{
+   width: 700px;
+   margin: auto;
+
+}
