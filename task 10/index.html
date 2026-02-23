@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabbed Navigation Plugin</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+    <style>
+        body{font-family:Arial;padding:20px;}
+        .tabs{display:flex;cursor:pointer;margin-bottom:10px;}
+        .tabs li{list-style:none;padding:10px 20px;border:1px solid #ccc;}
+        .activeTab{background:#007bff;color:#fff; }
+        .tab-content{display:none;border:1px solid #ccc;padding:15px;}
+    </style>
+</head>
+<body>
+<ul class="tabs">
+    <li data-tab="home">Home</li>
+    <li data-tab="about">About</li>
+    <li data-tab="contact">Contact</li>
+</ul>
+<div id="home" class="tab-content">
+    <h3>Home</h3>
+    <p>Welcome to Home section</p>
+</div>
+<div id="about" class="tab-content">
+    <h3>About</h3>
+    <p>About us content</p>
+</div>
+<div id="contact" class="tab-content">
+    <h3>Contact</h3>
+    <p>Contact information</p>
+</div>
+<script src="tabs-plugin.js"></script>
+<script>
+    $(".tabs").simpleTabs({
+        activeClass: "activeTab",
+        speed: 300,
+        defaultTab: 0
+    });
+</script>
+</body>
+</html>
