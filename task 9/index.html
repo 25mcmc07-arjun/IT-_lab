@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Form</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        body{ font-family: Arial; padding:20px;}
+        .error{ color:red; font-size:13px; }
+        .field{ margin-bottom:15px; }
+    </style>
+</head>
+<body>
+
+<h2 id="formTitle"></h2>
+
+<form id="dynamicForm">
+    <div id="formContainer"></div>
+    <div id="stateField" style="display:none" class="field">
+        <label>State</label>
+        <select id="state">
+            <option value="">Select State</option>
+            <option>California</option>
+            <option>Texas</option>
+            <option>New York</option>
+        </select>
+        <div class="error"></div>
+    </div>
+    <div id="extraSection" style="display:none" class="field">
+        <label>Zip Code</label>
+        <input type="text" id="zipcode">
+        <div class="error"></div>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
